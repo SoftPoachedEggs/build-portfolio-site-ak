@@ -23,14 +23,12 @@ a:visited {
 }
 
 /* ---------------Header Style Rules--------------- */
-/* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: var(--main-bg-color);
   padding: 20px 10px;
 }
 
-/* Style the header links */
 .header a {
   float: left;
   color: var(--primary-text-color);
@@ -40,7 +38,6 @@ a:visited {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-
 }
 
 .header a.logo {
@@ -50,7 +47,7 @@ a:visited {
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: var(--overlay-bg-color);
   color: var(--primary-text-color);
 }
 
@@ -63,7 +60,6 @@ a:visited {
   float: right;
 }
 
-
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -75,21 +71,17 @@ a:visited {
   }
 }
   
-  /* Change the background color on mouse-over */
-  .header a:hover {
+.header a:hover {
     text-decoration: underline;
-  }
+}
   
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: var(--about-bg-color);
+.header a.active {
+    background-color: var(--overlay-bg-color);
     color: var(--primary-text-color);
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
+}
+.header-right {
     float: right;
-  }
+}
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
