@@ -1,4 +1,3 @@
-
 :root{
   --primary-text-color: black;
   --main-bg-color: pink;
@@ -51,11 +50,6 @@ a:visited {
   color: var(--primary-text-color);
 }
 
-.header a.active {
-  background-color: var(--overlay-bg-color);
-  color: white;
-}
-
 .header-right {
   float: right;
 }
@@ -70,20 +64,15 @@ a:visited {
     float: none;
   }
 }
-  
+
 .header a:hover {
     text-decoration: underline;
 }
-  
-.header a.active {
-    background-color: var(--overlay-bg-color);
-    color: var(--primary-text-color);
-}
+
 .header-right {
     float: right;
 }
   
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
@@ -95,8 +84,6 @@ a:visited {
       padding: 0;
     }
   }
-
-/* Content Headers */
 
 .about-header{
   background-color: var(--gallery-bg-color);
@@ -293,5 +280,4 @@ ul {
 footer h5{
   text-align: center;
   background-color: var(--gallery-bg-color);
-
 }
