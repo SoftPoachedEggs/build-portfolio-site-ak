@@ -8,7 +8,7 @@ No installation necessary.
 
 ## Visual
 
-![Website Image](./assets/images/Horiseon-webpage-video.gif)
+![Website Image](./assets/Screen%20Recording%202022-12-05%20at%206.53.41%20PM.gif)
 
 
 ## Usage
