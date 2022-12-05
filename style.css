@@ -1,8 +1,22 @@
+
+:root{
+  --main-bg-color: pink;
+  --gallery-bg-color: rgb(190, 189, 189);
+  --about-bg-color: yellow;
+  --overlay-bg-color: rgba(34, 255, 0, 0.46);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 /* ---------------Header Style Rules--------------- */
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: var(--main-bg-color);
   padding: 20px 10px;
 }
 
@@ -84,11 +98,18 @@
     }
   }
 
-/* Portfolio Header */
+/* Content Headers */
 
-
+.about-header{
+  background-color: var(--gallery-bg-color);
+  position: relative;
+  font-size: 33px;
+  z-index: 1;
+  padding-left: 25px;
+  line-height: .8;
+}
 .section-header{
-  background-color: #f1f1f1;
+  background-color: var(--main-bg-color);
   position: relative;
   font-size: 33px;
   z-index: 1;
@@ -100,6 +121,7 @@
 .hero-container {
   padding-bottom: 10px;
   padding-top: 10px;
+  background-color: var(--gallery-bg-color);
 }
 
 .hero-gallery {
@@ -150,11 +172,7 @@
 }
 
 /* ----------------Gallery Style Guide------------------ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .container {
   padding: 10px 5%;
@@ -164,17 +182,16 @@ ul {
   list-style: none;
 }
 
-/* Responsive image gallery rules begin*/
-
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  background-color: var(--gallery-bg-color);
 }
 
 .image-gallery > li {
-  flex-basis: 700px; /*width: 350px;*/
+  flex-basis: 700px; 
   position: relative;
   cursor: pointer;
 }
@@ -203,27 +220,25 @@ ul {
   transition: all 0.2s 0.1s ease-in-out;
   color: #fff;
   border-radius: 5px;
-  /* center overlay text */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* hover */
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
-/* -----------Bio--------- */
+/* -----------about--------- */
 .about-container {
   height: 350px;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 30px;
   
 
 }
@@ -241,15 +256,22 @@ ul {
   height: 150px;
 }
 
-/* --------Contact Section */
+/* --------Contact Section------------ */
 
-.conact-container {
-  height: 350px;
+.contact-container {
+  height: 250px;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: var(--about-bg-color);
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.contact-icon {
+  width: 50px;
+
+}
